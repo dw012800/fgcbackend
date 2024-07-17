@@ -33,4 +33,4 @@ urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('moves/character/<str:character_name>/', MoveViewSet.as_view({'get': 'character_moves'}), name='character-moves'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]

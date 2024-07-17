@@ -59,11 +59,8 @@ MIDDLEWARE = [
 CORS_ALLOW_ALL_ORIGINS = True ## <---- will allow all origins, read cors docs to limit
 
 # Define BASE_DIR and other paths
-BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Add or modify these settings
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR)
 
 
 ROOT_URLCONF = 'fgcbackend.urls'
